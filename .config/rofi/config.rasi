@@ -1,3 +1,9 @@
+/** Basic config file **/
+
+configuration {
+  show-icons:         true;
+}
+
 configuration {
   display-drun: "Applications:";
   display-window: "Windows:";
@@ -36,7 +42,7 @@ element {
 
 element selected {
   text-color: @fg;
-  background-color: #a608dd;
+  background-color: #471BBC;
 }
 
 element-text {
@@ -56,7 +62,7 @@ entry {
   margin: 10 10 10 10;
   background-color: @bg-alt;
   border: 2px;
-  border-radius: 20;
+  border-radius: 8;
   text-color: @fg;
 }
 
@@ -80,5 +86,6 @@ prompt {
   enabled: false;
 }
 
+element-icon { size: 4ch ; }
 
-/* vim: ft=sass
+
