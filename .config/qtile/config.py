@@ -149,8 +149,9 @@ screens = [
             [
                 widget.Sep(
                     linewidth=0,
-                    padding=10,
+                    padding=5,
                 ),
+
                 widget.GroupBox(
                     fontsize=12,
                     highlight_method='block',
@@ -158,8 +159,8 @@ screens = [
                     inactive="#cfcfdf",
                     this_current_screen_border=colors[0],
                     margin_y=3,
-                    margin_x=4,
-                    padding_y=7,
+                    margin_x=0,
+                    padding_y=5,
                     padding_x=5,
                     use_mouse_wheel=False,
                 ),
@@ -185,7 +186,7 @@ screens = [
 
                 widget.Memory(
                     padding=10,
-                    fontsize=14,
+                    fontsize=13,
                 ),
 
                 widget.Sep(
@@ -195,10 +196,10 @@ screens = [
                 widget.Clock(
                     format="%Y/%m/%d %H:%M:%S ",
                     padding=10,
-                    fontsize=14,
+                    fontsize=13,
                 ),
             ],
-            size=50,
+            size=37,
             background="#001",
             opacity=1,
             margin=4,
@@ -215,8 +216,7 @@ def autostart():
 
 @hook.subscribe.client_new
 def client_new(client):
-    n = client.name
-    if n.startswith("Discord") or n.endswith("Discord"):
+    if "Discord" in client.name:
         client.togroup('3')
 
 
