@@ -200,7 +200,7 @@ screens = [
                 ),
             ],
             size=37,
-            background="#001",
+            background="#00001f",
             opacity=1,
             margin=4,
         ),
