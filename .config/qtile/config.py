@@ -134,7 +134,8 @@ c = ["DEV", "WWW", "CHAT", "MUS", "DES", "EDU", "TORR", "MISC", "VIRT"]
 groups = [Group(i) for i in c]
 
 
-layouts = [layout.Columns(border_width=2, border_focus="#aaa", margin=4),]
+layouts = [layout.Columns(
+    border_width=2, border_focus="#aa30ff", margin=4, border_on_single=True),]
 
 widget_defaults = dict(
     font="Caskaydia Cove Nerd Font",
@@ -157,10 +158,11 @@ screens = [
                     highlight_method='block',
                     active="#fff",
                     inactive="#cfcfdf",
-                    this_current_screen_border=colors[0],
+                    this_current_screen_border="#aad",
+                    block_highlight_text_color="#00001f",
                     margin_y=3,
                     margin_x=0,
-                    padding_y=5,
+                    padding_y=7,
                     padding_x=5,
                     use_mouse_wheel=False,
                 ),
@@ -199,9 +201,9 @@ screens = [
                     fontsize=13,
                 ),
             ],
-            size=37,
+            size=40,
             background="#00001f",
-            opacity=1,
+            opacity=0.7,
             margin=4,
         ),
     ),
