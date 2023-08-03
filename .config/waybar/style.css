@@ -1,6 +1,5 @@
 * {
     font-family: "CaskaydiaCove Nerd Font";
-    font-weight: bold;
     font-size: 13px;
 }
 
@@ -8,7 +7,7 @@ window#waybar {
     background-color: rgba(43, 48, 59, 0);
     color: #ffffff;
     transition-property: all;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
@@ -21,65 +20,72 @@ button {
 }
 
 window > box {
-    margin: 10px;
+    margin: 2px 12px;
 }
 
 #workspaces {
-	border-radius: 15px;
-	background: #00001f;
-	padding: 8px;
-	border: 1.5px solid #aaa;
+	border-radius: 999px;
+	background: transparent;
+	padding: 0 8px;
 	transition: 0.2s all;
 }
 
 #workspaces button {
-    padding: 0px 10px;
+    padding: 0px 7px;
     margin-right: 5px;
     background-color: transparent;
     color: #ffffff;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 #workspaces button:last-child {
-    margin-right: 0;
+    margin-right: -2px;
 }
 
 #workspaces button.focused {
-    background-color: #01f;
-    box-shadow: inset 0 -8px #01a;
-    border: 1.5px solid #999;
+    color: #40F3FA;
+}
+
+button:hover {
+    background: inherit;
+}
+
+#workspaces button:hover {
+   color: #0093FF; 
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    color: #eb4d4b;
+    animation-name: blink;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #clock,
 #tray {
-    padding: 10px 10px;
-    color: #ffffff;
-    border-radius: 10px;
     margin: 4px 0;
-    border: 1.5px solid #aaa;
 }
 
 #clock {
-    background-color: #01f;
+    margin-right: 11px;
+    border-radius: 999px;
+    padding: 0 25px;
+    border: 0.5px solid #aaa;
 }
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: #000000;
+        color: #ffffff;
     }
 }
 
-label:focus {
-    background-color: #000000;
-}
-
 #tray {
-    background-color: #00001f;
+    background-color: transparent;
+    border-radius: 999px;
+    padding: 10px 20px;
+    border: 0.5px solid #aaa;
 }
 
 #tray > .passive {
