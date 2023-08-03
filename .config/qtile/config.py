@@ -135,7 +135,7 @@ groups = [Group(i) for i in c]
 
 
 layouts = [layout.Columns(
-    border_width=2, border_focus="#aa30ff", margin=4, border_on_single=True),]
+    border_width=2, border_focus="#aad", margin=4, border_on_single=True),]
 
 widget_defaults = dict(
     font="Caskaydia Cove Nerd Font",
@@ -174,29 +174,16 @@ screens = [
                 ),
 
                 widget.Systray(
-                    padding=12,
+                    padding=15,
                 ),
 
                 widget.Sep(
                     linewidth=0,
-                    padding=10,
-                ),
-
-                widget.Sep(
-                    linewidth=2,
-                ),
-
-                widget.Memory(
-                    padding=10,
-                    fontsize=13,
-                ),
-
-                widget.Sep(
-                    linewidth=2,
+                    padding=20,
                 ),
 
                 widget.Clock(
-                    format="%Y/%m/%d %H:%M:%S ",
+                    format="%H:%M:%S %Y/%m/%d",
                     padding=10,
                     fontsize=13,
                 ),
@@ -214,12 +201,6 @@ screens = [
 def autostart():
     home = os.path.expanduser('~/.config/qtile/autostart.sh')
     subprocess.Popen([home])
-
-
-@hook.subscribe.client_new
-def client_new(client):
-    if "Discord" in client.name:
-        client.togroup('3')
 
 
 mouse = [
@@ -273,7 +254,7 @@ auto_minimize = True
 
 wl_input_rules = {
     "1267:12377:ELAN1300:00 04F3:3059 Touchpad": InputConfig(left_handed=True),
-    "*": InputConfig(left_handed=True, pointer_accel=True),
+    "*": InputConfig(left_handed=True),
     "type:keyboard": InputConfig(kb_options="ctrl:nocaps,compose:ralt"),
 }
 

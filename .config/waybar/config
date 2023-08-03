@@ -1,0 +1,29 @@
+{
+    "spacing": 10, 
+    "modules-left": ["sway/workspaces"],
+
+    "modules-right": ["tray", "clock"],
+    // Modules configuration
+    "sway/workspaces": {
+        "all-outputs": true,
+		"disable-scroll": true,
+         "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+         },
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 15
+    },
+    "clock": { 
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y/%m/%d}"
+    },
+}
+

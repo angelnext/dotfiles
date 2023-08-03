@@ -1,8 +1,8 @@
 #! /bin/sh
 lxsession &
 nitrogen --restore &
+dunst &
 picom &
 alacritty &
 copyq &
-dunst &
-discord
+caffeine-indicator
