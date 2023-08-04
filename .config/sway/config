@@ -20,7 +20,7 @@ set $term alacritty
 # on the original workspace that the command was run on.
 set $menu rofi -show drun
 
-output * bg /usr/share/backgrounds/76.jpg fill
+output * bg /usr/share/backgrounds/85.jpg fill
 #
 # Example configuration:
 #
@@ -64,8 +64,7 @@ input type:touchpad {
     tap enabled
 }
 
-exec lxsession
-exec caffeine-indicator
+exec polkit-dumb-agent
 exec alacritty
 exec copyq
 
@@ -84,14 +83,15 @@ exec copyq
 
     bindsym --locked XF86AudioPlay exec playerctl play-pause
 
-    bindsym --locked XF86AudioRaiseVolume exec /home/angel/.local/bin/changevolume up
-    bindsym --locked XF86AudioLowerVolume exec /home/angel/.local/bin/changevolume down
-    bindsym --locked XF86AudioMute exec /home/angel/.local/bin/changevolume mute
+    bindsym --locked XF86AudioRaiseVolume exec amixer sset Master 5%+
+    bindsym --locked XF86AudioLowerVolume exec amixer sset Master 5%-
+    bindsym --locked XF86AudioMute exec amixer -D pulse set Master toggle
 
-    bindsym --locked XF86MonBrightnessUp exec /home/angel/.local/bin/changebrightness up
-    bindsym --locked XF86MonBrightnessDown exec /home/angel/.local/bin/changebrightness down
+    bindsym --locked XF86MonBrightnessUp exec brightnessctl s 1%+
+    bindsym --locked XF86MonBrightnessDown exec  brightnessctl s 1%-
 
     bindsym $mod+b exec brave
+    bindsym $mod+e exec alacritty -e ranger
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -209,9 +209,9 @@ default_border pixel 2
 
 client.focused "#aaaaaa" "#aaaaaa" "#ffffff"
 
-for_window [tiling] splitt
+for_window [tiling] splith
 
 default_orientation vertical
 
-gaps outer 4
+gaps outer 0
 gaps inner 8

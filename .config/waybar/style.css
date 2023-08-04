@@ -20,30 +20,32 @@ button {
 }
 
 window > box {
-    margin: 2px 12px;
+    margin-left: 12px;
+    margin-left: 12px;
+    margin-top: 5px;
 }
 
 #workspaces {
 	border-radius: 999px;
-	background: transparent;
-	padding: 0 8px;
 	transition: 0.2s all;
+	background-color: #00001f;
+  border: 2px #fff solid;
 }
 
 #workspaces button {
     padding: 0px 7px;
+    margin: 5px;
     margin-right: 5px;
     background-color: transparent;
-    color: #ffffff;
-    border-radius: 7px;
-}
-
-#workspaces button:last-child {
-    margin-right: -2px;
+    color: #888;
+    border-radius: 999px;
+    background: rgba(0, 0, 255, 0.1);
+    border: 0.2px #779 solid;
 }
 
 #workspaces button.focused {
-    color: #40F3FA;
+    color: #fff;
+    background-color: rgba(0, 0, 255, 0.2)
 }
 
 button:hover {
@@ -51,7 +53,7 @@ button:hover {
 }
 
 #workspaces button:hover {
-   color: #0093FF; 
+    color: #01f;
 }
 
 #workspaces button.urgent {
@@ -64,15 +66,24 @@ button:hover {
 }
 
 #clock,
-#tray {
+#tray,
+#network,
+#battery,
+#backlight,
+#pulseaudio,
+#idle_inhibitor {
     margin: 4px 0;
+    border: 2px solid #779;
+    padding: 0 25px;
+    border-radius: 999px;
+    background-color: #00001f;  
+    padding: 7px 20px;
 }
 
 #clock {
     margin-right: 11px;
     border-radius: 999px;
     padding: 0 25px;
-    border: 0.5px solid #aaa;
 }
 
 @keyframes blink {
@@ -82,10 +93,7 @@ button:hover {
 }
 
 #tray {
-    background-color: transparent;
     border-radius: 999px;
-    padding: 10px 20px;
-    border: 0.5px solid #aaa;
 }
 
 #tray > .passive {

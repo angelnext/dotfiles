@@ -1,7 +1,8 @@
 /** Basic config file **/
 
 configuration {
-  show-icons:         true;
+  show-icons: true;
+  icon-theme: "OneUI";
 }
 
 configuration {
@@ -9,7 +10,7 @@ configuration {
   display-window: "Windows:";
   drun-display-format: "{name}";
   font: "Caskaydia Cove Nerd Font Medium 10";
-  modi: "run,window,drun";
+  modi: "run,window,drun,windowcd,combi,keys,filebrowser,ssh";
 }
 
 @theme "/dev/null"
