@@ -103,7 +103,7 @@ exec copyq
     bindsym $mod+Control+r reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Control+q exec rofi -show power-menu -modi power-menu:rofi-power-menu 
+    bindsym $mod+Control+q exec rofi -show power-menu -no-show-icons -sidebar-mode -modi power-menu:rofi-power-menu 
 #
 # Moving around:
 #
