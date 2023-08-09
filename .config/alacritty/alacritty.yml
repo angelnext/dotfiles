@@ -18,8 +18,8 @@ colors:
     white: '#d0d0d0'
     yellow: '#ffcb6b'
   primary:
-    background: '#00001f'
-    foreground: '0xbbc5ff'
+    background: '#000010'
+    foreground: '#aaaaaa'
 font:
   bold:
     family: Caskaydia Cove Nerd Font
@@ -29,7 +29,7 @@ font:
     family: Caskaydia Cove Nerd Font
   size: 10
 window:
-  opacity: 0.9
+  opacity: 0.8
   padding:
     x: 10
     y: 10
