@@ -4,11 +4,14 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0);
+    background-color: #1e1e2e;
     color: #ffffff;
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
+    border-radius: 0 0 10px 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: none;
 }
 
 window#waybar.hidden {
@@ -21,31 +24,26 @@ button {
 }
 
 window > box {
-    margin: 5px 10px 0 10px;
+    margin: 5px 5px 10px 5px;
 }
 
 #workspaces {
-	border-radius: 999px;
+	border-radius: 5px;
 	transition: all 0.5s ease-in-out;
-	background-color: transparent;
+  background-color: #3e3e4e;
+  padding: 0 5px;
 }
 
 #workspaces button {
     padding: 0px 4.5px;
     margin: 2px;
     background-color: transparent;
-    color: #aaa;
-    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
 }
 
 #workspaces button.active {
-    color: #FFB741;
-    font-weight: bold;
-}
-
-#workspaces button.focused {
-    color: #FFB741;
-    font-weight: bold;
+  color: #fff;
 }
 
 button:hover {
@@ -68,21 +66,17 @@ button:hover {
 #backlight,
 #pulseaudio,
 #idle_inhibitor,
-#custom-notification {
-    color: #fff;
-    padding: 0 10px;
-    border-radius: 999px;
-    background-color: transparent;
+#bluetooth {
+    padding: 0 15px;
+    border-radius: 5px;
+    background-color: #3e3e4e;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 @keyframes blink {
     to {
-        color: #ffffff;
+        color: #aaa;
     }
-}
-
-#tray {
-    border-radius: 999px;
 }
 
 #tray > .passive {
