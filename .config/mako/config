@@ -1,4 +1,3 @@
-
 font=CaskaydiaCove Nerd Font 10
 background-color=#1d2021
 text-color=#ebdbb2
@@ -13,6 +12,7 @@ actions=1
 history=1
 layer=overlay
 text-alignment=left
+default-timeout=10000
 
 [urgency=high]
 border-color=#cc241d

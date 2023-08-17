@@ -10,7 +10,7 @@ window#waybar {
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
     border-radius: 0 0 10px 10px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: #1e1e2e;
     border-top: none;
 }
 
@@ -24,7 +24,7 @@ button {
 }
 
 window > box {
-    margin: 5px 5px 10px 5px;
+    margin: 5px 5px 5px 5px;
 }
 
 #workspaces {
