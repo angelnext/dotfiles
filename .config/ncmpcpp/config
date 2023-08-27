@@ -1,0 +1,13 @@
+mpd_music_dir = "~/Music"
+
+lyrics_directory = "~/.config/ncmpcpp/lyrics"
+
+visualizer_data_source = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_in_stereo = "yes"
+visualizer_type = "spectrum"
+visualizer_look = "+|"
+visualizer_color = 56, 56, 92, 93
+lyrics_fetchers = genius
+
+execute_on_song_change = songinfo

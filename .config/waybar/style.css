@@ -1,49 +1,53 @@
 * {
     font-family: "CaskaydiaCove Nerd Font";
     font-size: 13px;
+    padding: 0;
 }
 
 window#waybar {
-    background-color: #1e1e2e;
+    background-color: transparent;
     color: #ffffff;
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
     border-radius: 0 0 10px 10px;
-    border: #1e1e2e;
-    border-top: none;
 }
 
 window#waybar.hidden {
     opacity: 0.2;
 }
 
+window#box {
+   margin: 0 10px;
+}
 
 button {
    border: none;
 }
 
-window > box {
-    margin: 5px 5px 5px 5px;
-}
-
 #workspaces {
-	border-radius: 5px;
-	transition: all 0.5s ease-in-out;
-  background-color: #3e3e4e;
-  padding: 0 5px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  border: 2px solid #A659FF;
+  margin-left: 10px;
+  background-color: rgba(0,0,35,0.7);
 }
 
 #workspaces button {
-    padding: 0px 4.5px;
-    margin: 2px;
+    padding: 0px 6px;
+    color: #A659FF; 
+    margin-right: 5px;
     background-color: transparent;
-    color: rgba(255, 255, 255, 0.7);
-    border-radius: 5px;
+    border-radius: 7px;
+}
+
+#workspaces :last-child {
+    margin-right: 0;
 }
 
 #workspaces button.active {
   color: #fff;
+  background: #A659FF
 }
 
 button:hover {
@@ -67,23 +71,23 @@ button:hover {
 #pulseaudio,
 #idle_inhibitor,
 #bluetooth {
-    padding: 0 15px;
-    border-radius: 5px;
-    background-color: #3e3e4e;
-    color: rgba(255, 255, 255, 0.7);
+    padding: 0 17px;
+    border-radius: 10px;
+    color: #A659FF;
+    border: 2px solid #A659FF;
+    background-color: rgba(0,0,35,0.7);
+}
+
+#tray {
+    background-color: #a659ff
+}
+
+#clock {
+    margin-right: 10px;
 }
 
 @keyframes blink {
     to {
         color: #aaa;
     }
-}
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
 }

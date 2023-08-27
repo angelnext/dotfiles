@@ -1,5 +1,7 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+  set_color "#a659ff"
+  prompt
+  set_color white
 end
 
-starship init fish | source
+fish_add_path ~/.local/bin

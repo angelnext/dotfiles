@@ -1,4 +1,3 @@
-function grep --wraps=rg --description 'alias grep rg'
-  rg $argv
-        
+function grep --wraps=batgrep --description 'alias grep batgrep'
+  batgrep $argv 
 end

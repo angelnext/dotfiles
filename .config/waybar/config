@@ -1,18 +1,16 @@
 {
     "layer": "top",
-    "spacing": 5,
-    "modules-left": [
-        "backlight",
-        "pulseaudio",
-        "battery"
-    ],
-    "modules-center": [
-        "wlr/workspaces",
+    "spacing": 7,
+    "modules-left": [ 
+	"wlr/workspaces"
     ],
     "modules-right": [
-        "tray",
+    	"tray",
+	"backlight",
+        "pulseaudio",
         "network",
         "bluetooth",
+        "battery",
         "clock"
     ],
     // Modules configuration
@@ -31,12 +29,9 @@
             "6": [],
             "7": [],
             "8": [],
-            "9": []
+            "9": [],
+	    "10": [],
         }
-    },
-    "tray": {
-        "icon-size": 16,
-        "spacing": 15
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -76,7 +71,7 @@
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-muted": "󰝟 {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
