@@ -1,5 +1,14 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export CARGO_HOME:/home/angel/\x2elocal/share/cargo
+SETUVAR --export DOCKER_CONFIG:/home/angel/\x2econfig/docker
+SETUVAR --export GNUPGHOME:/home/angel/\x2elocal/share/gnupg
+SETUVAR --export --path GOPATH:/home/angel/\x2elocal/share/go
+SETUVAR --export GTK2_RC_FILES:/home/angel/\x2econfig/gtk\x2d2\x2e0/gtkrc
+SETUVAR --export NODE_REPL_HISTORY:/home/angel/\x2elocal/share/node_repl_history
+SETUVAR --export NPM_CONFIG_USERCONFIG:/home/angel/\x2econfig/npm/npmrc
+SETUVAR --export PASSWORD_STORE_DIR:/home/angel/\x2elocal/share/pass
+SETUVAR --export RUSTUP_HOME:/home/angel/\x2elocal/share/rustup
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:555
 SETUVAR fish_color_cancel:\x2d\x2dreverse

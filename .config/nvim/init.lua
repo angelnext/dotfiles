@@ -1,13 +1,3 @@
-require'plugins'
-require'colorscheme'
-require'options'
-require'keymaps'
-require'treesitter-config'
-require'nvim-tree-config'
-require'mason-config'
-require'lualine-config'
-require'notify-config'
-require'colorizer-config'
-require'autopairs-config'
-require'lsp-config.lsp'
-require'lsp-config.completion'
+require("options")
+require("plugins")
+require("keymaps")      

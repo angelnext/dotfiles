@@ -20,7 +20,7 @@ set.scrolloff = 5
 set.fileencoding = "utf-8"
 set.conceallevel = 2
 
-set.relativenumber = true
+set.number = true
 set.cursorline = true
 set.wildmenu = true
 set.completeopt = "menuone,noselect"
@@ -30,5 +30,3 @@ set.hidden = true
 set.mouse = "a"
 
 vim.g.mapleader = ","
-
-vim.notify = require("notify")
