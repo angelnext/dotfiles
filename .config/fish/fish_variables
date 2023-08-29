@@ -12,11 +12,11 @@ SETUVAR --export RUSTUP_HOME:/home/angel/\x2elocal/share/rustup
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:555
 SETUVAR fish_color_cancel:\x2d\x2dreverse
-SETUVAR fish_color_command:d787ff
+SETUVAR fish_color_command:a659ff
 SETUVAR fish_color_comment:6c6c6c
 SETUVAR fish_color_cwd:green
 SETUVAR fish_color_cwd_root:red
-SETUVAR fish_color_end:ffffff
+SETUVAR fish_color_end:afafaf
 SETUVAR fish_color_error:brred
 SETUVAR fish_color_escape:brcyan
 SETUVAR fish_color_history_current:\x2d\x2dbold
@@ -26,7 +26,7 @@ SETUVAR fish_color_keyword:\x1d
 SETUVAR fish_color_normal:normal
 SETUVAR fish_color_operator:brcyan
 SETUVAR fish_color_option:\x1d
-SETUVAR fish_color_param:d0d0d0
+SETUVAR fish_color_param:afafaf
 SETUVAR fish_color_quote:afffaf
 SETUVAR fish_color_redirection:cyan\x1e\x2d\x2dbold
 SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
