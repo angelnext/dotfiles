@@ -9,3 +9,5 @@
 [user]
 	email = contact@angelnext.dev
 	name = Ángel González Vázquez
+[commit]
+	gpgsign = true
