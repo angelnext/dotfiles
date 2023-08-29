@@ -1,34 +1,36 @@
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
+require("mason").setup()
+require("mason-lspconfig").setup()
 
 local lspconfig = require("lspconfig")
+local lsp_defaults = lspconfig.util.default_config
 
-lspconfig.tsserver.setup({
-  capabilities = capabilities
-})
+lsp_defaults.capabilities =
+	vim.tbl_deep_extend("force", lsp_defaults.capabilities, require("cmp_nvim_lsp").default_capabilities())
 
-lspconfig.rome.setup({
-  capabilities = capabilities
-})
+local servers = {
+	"rust_analyzer",
+	"tsserver",
+	"pyright",
+	"lua_ls",
+	"gopls",
+	"rome",
+	"astro",
+	"jsonls",
+	"docker_compose_language_service",
+}
 
-lspconfig.astro.setup({
-  capabilities = capabilities
-})
-
-lspconfig.gopls.setup({
-  capabilities = capabilities
-})
-
-lspconfig.jsonls.setup({
-  capabilities = capabilities
-})
+for _, lsp in pairs(servers) do
+	lspconfig[lsp].setup({})
+end
 
 lspconfig.lua_ls.setup({
-  capabilities = capabilities,
-  settings = {
-    Lua = {
-      diagnostics = {
-        globals = { "vim" },
-      },
-    },
-  },
+	settings = {
+		Lua = {
+			diagnostics = {
+				globals = { "vim" },
+			},
+		},
+	},
 })
+
+vim.cmd([[ autocmd BufWritePost * FormatWrite ]])

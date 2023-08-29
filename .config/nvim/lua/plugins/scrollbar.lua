@@ -1,5 +1,5 @@
 require("scrollbar").setup({
-  handle = {
-    color = "#a0a0a0",
-  },
+	handle = {
+		color = "#a0a0a0",
+	},
 })

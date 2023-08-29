@@ -29,4 +29,6 @@ set.clipboard = "unnamedplus"
 set.hidden = true
 set.mouse = "a"
 
+set.completeopt = { "menu", "menuone", "noselect" }
+
 vim.g.mapleader = ","
