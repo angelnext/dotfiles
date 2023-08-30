@@ -40,7 +40,7 @@ return {
 				vim.opt.foldcolumn = "0"
 				vim.opt.signcolumn = "no"
 			end,
-			open_mapping = [[<leader>t]],
+			open_mapping = [[<F7>]],
 			shading_factor = 2,
 			direction = "float",
 			float_opts = { border = "rounded" },

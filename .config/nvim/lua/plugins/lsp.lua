@@ -13,7 +13,6 @@ local servers = {
 	"pyright",
 	"lua_ls",
 	"gopls",
-	"rome",
 	"astro",
 	"jsonls",
 	"docker_compose_language_service",
@@ -33,4 +32,8 @@ lspconfig.lua_ls.setup({
 	},
 })
 
-vim.cmd([[ autocmd BufWritePost * FormatWrite ]])
+vim.api.nvim_create_autocmd("BufWritePost", {
+  callback = function()
+    vim.api.nvim_command("FormatWrite")
+  end
+})
