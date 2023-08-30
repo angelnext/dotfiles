@@ -10,4 +10,27 @@ visualizer_look = "+|"
 visualizer_color = 56, 56, 92, 93
 lyrics_fetchers = genius
 
+[header]
+header_visibility = "no"
+header_window_color = "default"
+volume_color = "magenta"
+state_line_color = "black"
+
+[statusbar]
+progressbar_look = "━━━"
+progressbar_color = "black"
+statusbar_visibility = "yes"
+progressbar_elapsed_color = "magenta"
+statusbar_color = "3"
+song_status_format = "{%t - %a}"
+#display_bitrate = yes
+
+[library]
+empty_tag_color = "black"
+
+[global]
+main_window_color = "magenta"
+centered_cursor = "yes"
+enable_window_title = "yes"
+external_editor = "vim"
 execute_on_song_change = songinfo
