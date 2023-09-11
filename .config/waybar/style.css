@@ -70,7 +70,8 @@ button:hover {
 #backlight,
 #pulseaudio,
 #idle_inhibitor,
-#bluetooth {
+#bluetooth,
+#window {
     padding: 0 17px;
     border-radius: 10px;
     color: #A659FF;
@@ -79,7 +80,7 @@ button:hover {
 }
 
 #tray {
-    background-color: #a659ff
+    background-color: #a659ff;
 }
 
 #clock {

@@ -2,7 +2,7 @@ local formatter = require("formatter")
 local default_formatters = require("formatter.defaults")
 
 local biome = default_formatters.biome
-local stylua = default_formatters.stylua
+
 formatter.setup({
 	filetype = {
 		javascript = {
@@ -21,7 +21,10 @@ formatter.setup({
       biome,
     },
 		lua = {
-			stylua,
-		},
+			require("formatter.filetypes.lua").stylua,
+    },
+    rust = {
+      require("formatter.filetypes.rust").rustfmt,
+    }
 	},
 })

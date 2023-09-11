@@ -16,6 +16,9 @@ local servers = {
 	"astro",
 	"jsonls",
 	"docker_compose_language_service",
+	"bashls",
+	"taplo",
+	"hls",
 }
 
 for _, lsp in pairs(servers) do
@@ -33,7 +36,7 @@ lspconfig.lua_ls.setup({
 })
 
 vim.api.nvim_create_autocmd("BufWritePost", {
-  callback = function()
-    vim.api.nvim_command("FormatWrite")
-  end
+	callback = function()
+		vim.api.nvim_command("FormatWrite")
+	end,
 })

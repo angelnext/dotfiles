@@ -4,7 +4,7 @@ SETUVAR --export CARGO_HOME:/home/angel/\x2elocal/share/cargo
 SETUVAR --export DOCKER_CONFIG:/home/angel/\x2econfig/docker
 SETUVAR --export GNUPGHOME:/home/angel/\x2elocal/share/gnupg
 SETUVAR --export --path GOPATH:/home/angel/\x2elocal/share/go
-SETUVAR --export GPG_TTY:$(tty)
+SETUVAR --export GPG_TTY:\x24\x28tty\x29
 SETUVAR --export GTK2_RC_FILES:/home/angel/\x2econfig/gtk\x2d2\x2e0/gtkrc
 SETUVAR --export NODE_REPL_HISTORY:/home/angel/\x2elocal/share/node_repl_history
 SETUVAR --export NPM_CONFIG_USERCONFIG:/home/angel/\x2econfig/npm/npmrc
@@ -50,4 +50,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dreverse
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/angel/\x2elocal/share/npm/bin\x1e/home/angel/\x2elocal/share/cargo/bin\x1e/home/angel/\x2elocal/bin
+SETUVAR fish_user_paths:/opt/insomnia\x1e/home/angel/\x2elocal/share/npm/bin\x1e/home/angel/\x2elocal/share/cargo/bin\x1e/home/angel/\x2elocal/bin
