@@ -9,7 +9,7 @@ formatter.setup({
 			biome,
 		},
 		javascriptreact = {
-		  biome,
+			biome,
 		},
 		typescript = {
 			biome,
@@ -17,14 +17,14 @@ formatter.setup({
 		typescriptreact = {
 			biome,
 		},
-    json = {
-      biome,
-    },
+		json = {
+			biome,
+		},
 		lua = {
 			require("formatter.filetypes.lua").stylua,
-    },
-    rust = {
-      require("formatter.filetypes.rust").rustfmt,
-    }
+		},
+		rust = {
+			require("formatter.filetypes.rust").rustfmt,
+		},
 	},
 })

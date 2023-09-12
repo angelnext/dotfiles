@@ -5,5 +5,3 @@
 	name = Ángel González Vázquez
 [commit]
 	gpgsign = true
-[core]
-	sshCommand = ssh -i ~/.ssh/laptop

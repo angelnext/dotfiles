@@ -5,3 +5,5 @@ if status is-interactive
 end
 
 fish_add_path ~/.local/bin
+
+set -gx GPG_TTY (tty)

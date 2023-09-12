@@ -16,9 +16,11 @@ local servers = {
 	"astro",
 	"jsonls",
 	"docker_compose_language_service",
+	"emmet_language_server",
 	"bashls",
 	"taplo",
 	"hls",
+	"biome",
 }
 
 for _, lsp in pairs(servers) do

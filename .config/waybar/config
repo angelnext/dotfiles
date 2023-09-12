@@ -32,6 +32,9 @@
 	          "10": [],
         },
     },
+    "tray": {
+      "spacing": 10
+    },
     "network": {
         "format-wifi": "{signalStrength}% ",
         "format-ethernet": "{ipaddr}/{cidr} ",

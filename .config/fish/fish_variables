@@ -6,7 +6,6 @@ SETUVAR --export DOCKER_CONFIG:/home/angel/\x2econfig/docker
 SETUVAR --export GHCUP_USE_XDG_DIRS:true
 SETUVAR --export GNUPGHOME:/home/angel/\x2elocal/share/gnupg
 SETUVAR --export --path GOPATH:/home/angel/\x2elocal/share/go
-SETUVAR --export GPG_TTY:/dev/pts/1
 SETUVAR --export GTK2_RC_FILES:/home/angel/\x2econfig/gtk\x2d2\x2e0/gtkrc
 SETUVAR --export HISTFILE:/home/angel/\x2elocal/state/bash/history
 SETUVAR --export NODE_REPL_HISTORY:/home/angel/\x2elocal/share/node_repl_history
