@@ -70,8 +70,7 @@ button:hover {
 #backlight,
 #pulseaudio,
 #idle_inhibitor,
-#bluetooth,
-#window {
+#bluetooth {
     padding: 0 17px;
     border-radius: 10px;
     color: #A659FF;
