@@ -9,6 +9,8 @@ visualizer_type = "spectrum"
 visualizer_look = "+|"
 visualizer_color = 56, 56, 92, 93
 lyrics_fetchers = genius
+display_volume_level = no
+volume_change_step = 0
 
 [header]
 header_visibility = "no"

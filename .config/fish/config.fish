@@ -6,4 +6,6 @@ end
 
 fish_add_path ~/.local/bin
 
+nvm use latest &> /dev/null
+
 set -gx GPG_TTY (tty)
