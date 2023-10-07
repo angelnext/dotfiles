@@ -1,18 +1,19 @@
 font=CaskaydiaCove Nerd Font 10
 background-color=#000023
 text-color=#ebdbb2
-width=350
-height=250
-border-size=2
-border-color=#555555
-border-radius=5
-padding=7
+width=370
+height=110
+border-size=1
+border-color=#462F6E
+border-radius=15
+padding=5
+sort=-time
 icons=1
 actions=1
 history=1
 layer=overlay
 text-alignment=left
-default-timeout=5000
+default-timeout=7000
 
 [urgency=high]
 border-color=#cc241d

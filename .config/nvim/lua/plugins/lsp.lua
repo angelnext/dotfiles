@@ -23,6 +23,8 @@ local servers = {
 	"biome",
 	"clangd",
 	"denols",
+	"volar",
+	"prismals",
 }
 
 for _, lsp in pairs(servers) do
@@ -48,7 +50,9 @@ lspconfig.tsserver.setup({
 	single_file_support = false,
 })
 
+vim.api.nvim_create_augroup("AutoFormatting", {})
 vim.api.nvim_create_autocmd("BufWritePost", {
+	group = "AutoFormatting",
 	callback = function()
 		vim.api.nvim_command("FormatWrite")
 	end,

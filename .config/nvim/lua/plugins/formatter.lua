@@ -2,7 +2,7 @@ local formatter = require("formatter")
 local default_formatters = require("formatter.defaults")
 
 local biome = default_formatters.biome
-local denofmt = default_formatters.denofmt
+-- local denofmt = default_formatters.denofmt
 
 formatter.setup({
 	filetype = {
@@ -13,13 +13,19 @@ formatter.setup({
 			biome,
 		},
 		typescript = {
-			denofmt,
+			biome,
 		},
 		typescriptreact = {
 			biome,
 		},
 		json = {
 			biome,
+		},
+		html = {
+			require("formatter.filetypes.html").tidy,
+		},
+		svg = {
+			require("formatter.filetypes.xml").tidy,
 		},
 		c = {
 			require("formatter.filetypes.c").clangformat,

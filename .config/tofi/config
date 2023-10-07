@@ -17,5 +17,5 @@ padding-left = 0
 padding-right = 0
 late-keyboard-init = true
 num-results = 15
-selection-color = #A659FF
-background-color = #000023
+selection-color = #FF19B1
+background-color = #000000

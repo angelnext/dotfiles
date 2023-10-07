@@ -10,15 +10,10 @@ window#waybar {
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
-    border-radius: 0 0 10px 10px;
 }
 
 window#waybar.hidden {
     opacity: 0.2;
-}
-
-window#box {
-   margin: 0 10px;
 }
 
 button {
@@ -26,16 +21,14 @@ button {
 }
 
 #workspaces {
-  border-radius: 10px;
+  border-radius: 0 7px 0 7px;
   transition: all 0.5s ease-in-out;
-  border: 2px solid #A659FF;
-  margin-left: 10px;
-  background-color: rgba(0,0,35,0.7);
+  background-color: rgba(0,0,0,0.7);
 }
 
 #workspaces button {
     padding: 0px 6px;
-    color: #A659FF; 
+    color: #c0c0c0; 
     margin-right: 5px;
     background-color: transparent;
     border-radius: 7px;
@@ -46,21 +39,11 @@ button {
 }
 
 #workspaces button.active {
-  color: #fff;
-  background: #A659FF
+  color: #FF19B1;
 }
 
 button:hover {
     background: inherit;
-}
-
-#workspaces button.urgent {
-    color: #eb4d4b;
-    animation-name: blink;
-    animation-duration: 0.3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 #clock,
@@ -72,18 +55,11 @@ button:hover {
 #idle_inhibitor,
 #bluetooth {
     padding: 0 17px;
-    border-radius: 10px;
-    color: #A659FF;
-    border: 2px solid #A659FF;
-    background-color: rgba(0,0,35,0.7);
+    border-radius: 0 7px 0 7px;
+    color: #FF19B1;
+    background-color: rgba(0,0,0,0.7);
 }
 
 #clock {
-    margin-right: 10px;
-}
-
-@keyframes blink {
-    to {
-        color: #aaa;
-    }
+  border-radius: 0 0 0 7px;
 }
