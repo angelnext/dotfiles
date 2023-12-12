@@ -1,13 +1,16 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export ANDROID_HOME:/home/angel/\x2elocal/share/android
 SETUVAR --export CARGO_HOME:/home/angel/\x2elocal/share/cargo
 SETUVAR --export --path CUDA_CACHE_PATH:/home/angel/\x2ecache/nv
 SETUVAR --export DOCKER_CONFIG:/home/angel/\x2econfig/docker
 SETUVAR --export GHCUP_USE_XDG_DIRS:true
 SETUVAR --export GNUPGHOME:/home/angel/\x2elocal/share/gnupg
 SETUVAR --export --path GOPATH:/home/angel/\x2elocal/share/go
+SETUVAR --export GRADLE_USER_HOME:/home/angel/\x2elocal/share/gradle
 SETUVAR --export GTK2_RC_FILES:/home/angel/\x2econfig/gtk\x2d2\x2e0/gtkrc
 SETUVAR --export HISTFILE:/home/angel/\x2elocal/state/bash/history
+SETUVAR --export KODI_DATA:/home/angel/\x2elocal/share/kodi
 SETUVAR --export NODE_REPL_HISTORY:/home/angel/\x2elocal/share/node_repl_history
 SETUVAR --export NPM_CONFIG_USERCONFIG:/home/angel/\x2econfig/npm/npmrc
 SETUVAR --export PASSWORD_STORE_DIR:/home/angel/\x2elocal/share/pass
@@ -18,6 +21,7 @@ SETUVAR --export XDG_CACHE_HOME:/home/angel/\x2ecache
 SETUVAR --export XDG_CONFIG_HOME:/home/angel/\x2econfig
 SETUVAR --export XDG_DATA_HOME:/home/angel/\x2elocal/share
 SETUVAR --export XDG_STATE_HOME:/home/angel/\x2elocal/state
+SETUVAR --export _JAVA_OPTIONS:\x2dDjava\x2eutil\x2eprefs\x2euserRoot\x3d/home/angel/\x2econfig/java
 SETUVAR __fish_initialized:3400
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher
