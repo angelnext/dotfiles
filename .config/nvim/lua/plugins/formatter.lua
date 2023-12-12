@@ -2,7 +2,7 @@ local formatter = require("formatter")
 local default_formatters = require("formatter.defaults")
 
 local biome = default_formatters.biome
--- local denofmt = default_formatters.denofmt
+local denofmt = default_formatters.denofmt
 
 formatter.setup({
 	filetype = {
@@ -20,6 +20,9 @@ formatter.setup({
 		},
 		json = {
 			biome,
+		},
+		css = {
+			default_formatters.prettierd,
 		},
 		html = {
 			require("formatter.filetypes.html").tidy,

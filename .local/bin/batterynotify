@@ -1,0 +1,30 @@
+#!/bin/sh
+
+# Send a notification if the laptop battery is either low 
+# or is fully charged.
+
+# Battery percentage at which to notify
+warning_level=20
+battery_discharging=$(acpi -b | grep "Battery 0" | grep -c "Discharging")
+battery_level=$(acpi -b | grep "Battery 0" | grep -P -o '[0-9]+(?=%)')
+
+# Use two files to store whether we've shown a notification or not (to prevent multiple notifications)
+empty_file=/tmp/batteryempty
+full_file=/tmp/batteryfull
+
+# Reset notifications if the computer is charging/discharging
+if [ "$battery_discharging" -eq 1 ] && [ -f $full_file ]; then
+    rm $full_file
+elif [ "$battery_discharging" -eq 0 ] && [ -f $empty_file ]; then
+    rm $empty_file
+fi
+
+# if the battery is charging and is full (and has not shown notification yet)
+if [ "$battery_level" -gt 95 ] && [ "$battery_discharging" -eq 0 ] && [ ! -f $full_file ]; then
+    notify-send "Battery Charged" "Battery is fully charged." -i "battery" -r 9991
+    touch $full_file
+# If the battery is low and is not charging (and has not shown notification yet)
+elif [ "$battery_level" -le $warning_level ] && [ "$battery_discharging" -eq 1 ] && [ ! -f $empty_file ]; then
+    notify-send "Low Battery" "${battery_level}% of battery remaining." -u critical -i "battery-alert" -r 9991
+    touch $empty_file
+fi

@@ -7,7 +7,7 @@ function fish_prompt
         and set color $fish_color_cwd_root
     end
 
-    set_color "#FF19B1"
+    set_color "#00FFFF"
     echo -n (prompt_pwd)
     set_color normal
 

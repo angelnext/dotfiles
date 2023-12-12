@@ -1,15 +1,17 @@
 {
     "layer": "top",
-    "spacing": 7,
-    "modules-left": [ 
-	    "hyprland/workspaces"
-    ],
-    "modules-right": [
-    	"tray",
-	    "backlight",
+    "position": "left",
+    "modules-left": [
+      "backlight",
       "pulseaudio",
       "network",
-      "bluetooth",
+      "bluetooth"
+    ],
+    "modules-center": [
+      "hyprland/workspaces"
+    ],
+    "modules-right": [
+    	"tray", 
       "battery",
       "clock"
     ],
@@ -19,15 +21,12 @@
         "on-scroll-down": "hyprctl dispatch workspace e-1",
     },
     "tray": {
-      "spacing": 10
+      "spacing": 5
     },
     "network": {
-        "format-wifi": "{signalStrength}% ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
+        "format-wifi": "",
+        "tooltip-format": "{ifname} via {gwaddr} ({signalStrength}%)",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "battery": {
         "states": {
@@ -35,10 +34,10 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% 󱐋",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
+        "format": "{icon}",
+        "format-alt": "{capacity}% {icon}",
+        "format-charging": "󱐋",
+        "format-plugged": "",
         "format-icons": [
             "",
             "",
@@ -49,30 +48,15 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "󰝟 {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": " ",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": [
-                "",
-                "",
-                ""
-            ]
-        },
+        "format": "󰕾",
+        "format-alt": "{volume}% 󰕾",
+        "format-muted": "󰝟",
         "on-click": "pavucontrol"
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
+        "format": "{icon}",
+        "format-alt": "{percent}% {icon}",
         "format-icons": [
             "",
             "",
@@ -90,7 +74,8 @@
         "format-alt": "{:%Y/%m/%d}"
     },
     "bluetooth": {
-        "format": "{status} ",
+        "format": "",
+        "format-alt": "{status} ",
         "format-connected": "{device_alias} ",
         "format-connected-battery": "{device_alias} {device_battery_percentage}% ",
         // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device

@@ -1,0 +1,2 @@
+#! /bin/sh
+bluetoothctl info | sed '21p;d' | sed -e 's/^[[:space:]]*//'

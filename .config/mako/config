@@ -1,19 +1,19 @@
-font=CaskaydiaCove Nerd Font 10
-background-color=#000023
+font=Liberation Mono 10
+background-color=#000000
 text-color=#ebdbb2
 width=370
 height=110
 border-size=1
-border-color=#462F6E
+border-color=#333333
 border-radius=15
-padding=5
+padding=20
 sort=-time
 icons=1
 actions=1
 history=1
 layer=overlay
 text-alignment=left
-default-timeout=7000
+default-timeout=5000
 
 [urgency=high]
 border-color=#cc241d

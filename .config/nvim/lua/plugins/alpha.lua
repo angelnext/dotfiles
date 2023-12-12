@@ -29,7 +29,7 @@ dashboard.section.buttons.val = {
 	dashboard.button("c", "  > Configuration", "<CMD>cd $HOME/.config/nvim | Telescope find_files<CR>"),
 }
 
-dashboard.section.header.opts.hl = "Include"
+dashboard.section.header.opts.hl = "Function"
 dashboard.section.buttons.opts.hl = "Comment"
 
 dashboard.config.layout = {
@@ -41,10 +41,8 @@ dashboard.config.layout = {
 	dashboard.section.footer,
 }
 
--- Send config to alpha
 alpha.setup(dashboard.opts)
 
--- Disable folding on alpha buffer
 vim.cmd([[
     autocmd FileType alpha setlocal nofoldenable
 ]])
