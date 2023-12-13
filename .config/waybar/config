@@ -1,6 +1,8 @@
 {
     "layer": "top",
-    "position": "left",
+    "spacing": 5,
+    "position": "bottom",
+    "margin": 3,
     "modules-left": [
       "backlight",
       "pulseaudio",
@@ -21,12 +23,12 @@
         "on-scroll-down": "hyprctl dispatch workspace e-1",
     },
     "tray": {
-      "spacing": 5
+      "spacing": 10
     },
     "network": {
         "format-wifi": "",
         "tooltip-format": "{ifname} via {gwaddr} ({signalStrength}%)",
-        "format-disconnected": "Disconnected ⚠",
+        "format-disconnected": "⚠",
     },
     "battery": {
         "states": {
@@ -34,8 +36,7 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}",
-        "format-alt": "{capacity}% {icon}",
+        "format": "{capacity}% {icon}",
         "format-charging": "󱐋",
         "format-plugged": "",
         "format-icons": [
@@ -48,15 +49,12 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "󰕾",
-        "format-alt": "{volume}% 󰕾",
+        "format": "{volume}% 󰕾",
         "format-muted": "󰝟",
         "on-click": "pavucontrol"
     },
     "backlight": {
-        // "device": "acpi_video1",
-        "format": "{icon}",
-        "format-alt": "{percent}% {icon}",
+        "format": "{percent}% {icon}",
         "format-icons": [
             "",
             "",
@@ -76,7 +74,7 @@
     "bluetooth": {
         "format": "",
         "format-alt": "{status} ",
-        "format-connected": "{device_alias} ",
+        "format-connected": "",
         "format-connected-battery": "{device_alias} {device_battery_percentage}% ",
         // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
         "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
