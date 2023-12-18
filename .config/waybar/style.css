@@ -5,8 +5,8 @@
 }
 
 window#waybar {
-  background-color: #000;
-  border: 1px solid #777;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #333;
   color: #fff;
   transition-property: all;
   transition-duration: 0.5s;

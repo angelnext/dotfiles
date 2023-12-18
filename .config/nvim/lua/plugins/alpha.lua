@@ -29,7 +29,7 @@ dashboard.section.buttons.val = {
 	dashboard.button("c", "  > Configuration", "<CMD>cd $HOME/.config/nvim | Telescope find_files<CR>"),
 }
 
-dashboard.section.header.opts.hl = "Function"
+dashboard.section.header.opts.hl = "String"
 dashboard.section.buttons.opts.hl = "Comment"
 
 dashboard.config.layout = {

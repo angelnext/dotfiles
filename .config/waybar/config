@@ -1,8 +1,8 @@
 {
     "layer": "top",
-    "spacing": 5,
+    "spacing": 7,
     "position": "bottom",
-    "margin": 3,
+    "margin": 4,
     "modules-left": [
       "backlight",
       "pulseaudio",
@@ -36,9 +36,9 @@
             "warning": 30,
             "critical": 15
         },
+        "tooltip-format": "{capacity}% with {time} left",
         "format": "{capacity}% {icon}",
-        "format-charging": "󱐋",
-        "format-plugged": "",
+        "format-charging": "{capacity}% 󱐋 {icon}",
         "format-icons": [
             "",
             "",
@@ -74,7 +74,7 @@
     "bluetooth": {
         "format": "",
         "format-alt": "{status} ",
-        "format-connected": "",
+        "format-connected": "{device_alias} ",
         "format-connected-battery": "{device_alias} {device_battery_percentage}% ",
         // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
         "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
