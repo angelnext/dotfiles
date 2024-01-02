@@ -1,40 +1,9 @@
-local map = function(mode, lhs, rhs, opts)
-	local options = { noremap = true, silent = true }
-	if opts then
-		options = vim.tbl_extend("force", options, opts)
-	end
-	vim.keymap.set(mode, lhs, rhs, options)
+local set = vim.keymap.set
+
+set("n", "<C-s>", ":w<CR>")
+set("n", "<A-c>", "<Cmd>BufferClose<CR>")
+set("n", "<C-p>", "<Cmd>BufferPick<CR>")
+
+for i = 1, 10 do
+	set("n", "<A-" .. i .. ">", "<cmd>BufferGoto " .. i .. "<cr>")
 end
-
-map("n", "<Leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle Explorer" })
-map("n", "<Leader>o", ":NvimTreeFocus<CR>", { desc = "Focus Explorer" })
-map("n", "<Leader>z", ":ZenMode<CR>", { desc = "Toggle ZenMode" })
-map("n", "<Leader>cx", ":TroubleToggle<CR>", { desc = "Toggle Trouble Menu" })
-map("n", "<Leader>ca", ":CodeActionMenu<CR>", { desc = "Toggle Code Actions Menu" })
-map("n", "<Leader>f", ":Telescope find_files<CR>", { desc = "Find files" })
-map("n", "<C-s>", ":w<CR>")
-map("n", "<A-n>", ":n ", { desc = "Create new file" })
-map("n", "<A-h>", ":noh<CR>", { desc = "Clear search highlight" })
-map("n", "<A-,>", "<Cmd>BufferPrevious<CR>")
-map("n", "<A-.>", "<Cmd>BufferNext<CR>")
-map("n", "<A-<>", "<Cmd>BufferMovePrevious<CR>")
-map("n", "<A->>", "<Cmd>BufferMoveNext<CR>")
-map("n", "<A-1>", "<Cmd>BufferGoto 1<CR>")
-map("n", "<A-2>", "<Cmd>BufferGoto 2<CR>")
-map("n", "<A-3>", "<Cmd>BufferGoto 3<CR>")
-map("n", "<A-4>", "<Cmd>BufferGoto 4<CR>")
-map("n", "<A-5>", "<Cmd>BufferGoto 5<CR>")
-map("n", "<A-6>", "<Cmd>BufferGoto 6<CR>")
-map("n", "<A-7>", "<Cmd>BufferGoto 7<CR>")
-map("n", "<A-8>", "<Cmd>BufferGoto 8<CR>")
-map("n", "<A-9>", "<Cmd>BufferGoto 9<CR>")
-map("n", "<A-0>", "<Cmd>BufferLast<CR>")
-map("n", "<A-p>", "<Cmd>BufferPin<CR>")
-map("n", "<A-c>", "<Cmd>BufferClose<CR>")
-map("n", "<C-p>", "<Cmd>BufferPick<CR>")
-map("n", "<Leader>bb", "<Cmd>BufferOrderByBufferNumber<CR>", { desc = "Order buffers by number" })
-map("n", "<Leader>bd", "<Cmd>BufferOrderByDirectory<CR>", { desc = "Order buffers by directory" })
-map("n", "<Leader>bl", "<Cmd>BufferOrderByLanguage<CR>", { desc = "Order buffers by language" })
-map("n", "<Leader>bw", "<Cmd>BufferOrderByWindowNumber<CR>", { desc = "Order buffers by window number" })
-
-require("which-key").register()

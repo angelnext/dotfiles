@@ -1,22 +1,21 @@
-mpd_music_dir = "~/Music"
+# vim: ft=toml
 
-lyrics_directory = "~/.config/ncmpcpp/lyrics"
-
+[visualizer]
 visualizer_data_source = "/tmp/mpd.fifo"
 visualizer_output_name = "my_fifo"
 visualizer_in_stereo = "yes"
 visualizer_type = "spectrum" (spectrum/wave/wave_filled/ellipse)
 visualizer_look = "▤▦"
-visualizer_color = "magenta, red"
+visualizer_color = "magenta"
+
+[lyrics]
+lyrics_directory = "~/.config/ncmpcpp/lyrics"
 lyrics_fetchers = genius
+
+[volume]
 display_volume_level = no
 volume_change_step = 0
-
-[header]
-header_visibility = "no"
-header_window_color = "default"
 volume_color = "magenta"
-state_line_color = "black"
 
 [statusbar]
 progressbar_look = "━━━"
@@ -25,14 +24,10 @@ statusbar_visibility = "yes"
 progressbar_elapsed_color = "magenta"
 statusbar_color = "3"
 song_status_format = "{%t - %a}"
-#display_bitrate = yes
-
-[library]
-empty_tag_color = "black"
+display_bitrate = yes
 
 [global]
 main_window_color = "magenta"
 centered_cursor = "yes"
 enable_window_title = "yes"
-external_editor = "vim"
-execute_on_song_change = songinfo
+external_editor = "nvim"

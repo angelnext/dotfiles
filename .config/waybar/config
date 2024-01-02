@@ -1,34 +1,51 @@
+// vim: ft=jsonc
 {
     "layer": "top",
-    "spacing": 7,
-    "position": "bottom",
-    "margin": 4,
-    "modules-left": [
+    "position": "top",
+    "margin": 3,
+    "modules-left": [ 
+      "hyprland/workspaces"
+    ],
+    "modules-center": [
+      "hyprland/window"
+    ],
+    "modules-right": [
+    	"tray", 
+      "battery",
+      "clock",
       "backlight",
       "pulseaudio",
       "network",
       "bluetooth"
     ],
-    "modules-center": [
-      "hyprland/workspaces"
-    ],
-    "modules-right": [
-    	"tray", 
-      "battery",
-      "clock"
-    ],
     // Modules configuration
     "hyprland/workspaces": {
+        "format": "{icon}  {windows}",
         "on-scroll-up": "hyprctl dispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1",
-    },
-    "tray": {
-      "spacing": 10
+        "window-rewrite-default": "",
+        "window-rewrite": {
+          "title<.*youtube.*>": "",
+          "title<.*github.*>": "",
+          "title<.*nvim.*>": "",
+          "title<.*ranger.*>": "",
+          "discord": "󰙯",
+          "foot": "",
+          "code": "󰨞",
+          "brave": "",
+          "stremio": "",
+          "mpdevil": "󰝚",
+          "spotify": ""
+	      },
+        "format-icons": {
+          "active": "",
+          "default": ""
+        }
     },
     "network": {
         "format-wifi": "",
         "tooltip-format": "{ifname} via {gwaddr} ({signalStrength}%)",
-        "format-disconnected": "⚠",
+        "format-disconnected": "!"
     },
     "battery": {
         "states": {

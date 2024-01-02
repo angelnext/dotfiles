@@ -1,14 +1,17 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export ANDROID_HOME:/home/angel/\x2elocal/share/android
+SETUVAR --export BACKGROUND:Pictures/Backgrounds/motm3\x2epng
 SETUVAR --export CARGO_HOME:/home/angel/\x2elocal/share/cargo
 SETUVAR --export --path CUDA_CACHE_PATH:/home/angel/\x2ecache/nv
 SETUVAR --export DOCKER_CONFIG:/home/angel/\x2econfig/docker
 SETUVAR --export GHCUP_USE_XDG_DIRS:true
 SETUVAR --export GNUPGHOME:/home/angel/\x2elocal/share/gnupg
+SETUVAR --export GOBIN:/home/angel/\x2elocal/share/go/bin
 SETUVAR --export --path GOPATH:/home/angel/\x2elocal/share/go
 SETUVAR --export GRADLE_USER_HOME:/home/angel/\x2elocal/share/gradle
 SETUVAR --export GTK2_RC_FILES:/home/angel/\x2econfig/gtk\x2d2\x2e0/gtkrc
+SETUVAR --export GTK_THEME:Catppuccin
 SETUVAR --export HISTFILE:/home/angel/\x2elocal/state/bash/history
 SETUVAR --export KODI_DATA:/home/angel/\x2elocal/share/kodi
 SETUVAR --export LIBVA_DRIVER_NAME:nvidia
@@ -25,16 +28,25 @@ SETUVAR --export XDG_CACHE_HOME:/home/angel/\x2ecache
 SETUVAR --export XDG_CONFIG_HOME:/home/angel/\x2econfig
 SETUVAR --export XDG_DATA_HOME:/home/angel/\x2elocal/share
 SETUVAR --export XDG_STATE_HOME:/home/angel/\x2elocal/state
+SETUVAR ZO_CMD:zo
+SETUVAR Z_CMD:z
+SETUVAR Z_DATA:/home/angel/\x2elocal/share/z/data
+SETUVAR Z_DATA_DIR:/home/angel/\x2elocal/share/z
+SETUVAR Z_EXCLUDE:\x5e/home/angel\x24
 SETUVAR --export _JAVA_OPTIONS:\x2dDjava\x2eutil\x2eprefs\x2euserRoot\x3d/home/angel/\x2econfig/java
 SETUVAR --export __GLX_VENDOR_LIBRARY_NAME:nvidia
 SETUVAR --export __VK_LAYER_NV_optimus:NVIDIA_only
 SETUVAR __fish_initialized:3400
+SETUVAR _fisher_jethrokuan_2F_z_files:\x7e/\x2econfig/fish/functions/__z\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_add\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_clean\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_complete\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/z\x2efish
+SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:\x7e/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/autopair\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher
+SETUVAR _fisher_jorgebucaran_2F_spark_2E_fish_files:\x7e/\x2econfig/fish/functions/spark\x2efish\x1e\x7e/\x2econfig/fish/completions/spark\x2efish
+SETUVAR _fisher_joseluisq_2F_gitnow_files:\x7e/\x2econfig/fish/functions/__gitnow_check_if_branch_exist\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_clone_msg\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_clone_params\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_clone_repo\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_current_branch_list\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_current_branch_name\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_current_remote\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_get_clip_program\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_get_latest_semver_release_tag\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_get_latest_tag\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_get_tags_ordered\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_get_valid_semver_prerelease_value\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_get_valid_semver_release_value\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_gitflow_branch\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_has_uncommited_changes\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_increment_number\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_is_git_repository\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_is_number\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_load_config\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_load_git_functions\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_manual\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_msg_not_valid_repository\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_new_branch_switch\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_slugify\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/gitnow\x2efish\x1e\x7e/\x2econfig/fish/completions/merge\x2efish\x1e\x7e/\x2econfig/fish/completions/move\x2efish\x1e\x7e/\x2econfig/fish/completions/tag\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z\x1ejoseluisq/gitnow\x1ejorgebucaran/autopair\x2efish\x1ejorgebucaran/spark\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:555
 SETUVAR fish_color_cancel:\x2d\x2dreverse
-SETUVAR fish_color_command:71FE91
+SETUVAR fish_color_command:1E48E9
 SETUVAR fish_color_comment:6c6c6c
 SETUVAR fish_color_cwd:green
 SETUVAR fish_color_cwd_root:red
@@ -70,4 +82,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dreverse
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/angel/\x2espicetify\x1e/home/angel/\x2elocal/share/JetBrains/Toolbox/scripts\x1e/home/angel/\x2elocal/share/go/bin\x1e/home/angel/\x2edeno/bin\x1e/home/angel/\x2ebun/bin\x1e/opt/insomnia\x1e/home/angel/\x2elocal/share/npm/bin\x1e/home/angel/\x2elocal/share/cargo/bin\x1e/home/angel/\x2elocal/bin
+SETUVAR fish_user_paths:/home/angel/\x2elocal/share/gem/ruby/3\x2e0\x2e0/bin\x1e/home/angel/\x2elocal/share/bob/nvim\x2dbin\x1e/home/angel/\x2espicetify\x1e/home/angel/\x2elocal/share/JetBrains/Toolbox/scripts\x1e/home/angel/\x2elocal/share/go/bin\x1e/home/angel/\x2edeno/bin\x1e/home/angel/\x2ebun/bin\x1e/opt/insomnia\x1e/home/angel/\x2elocal/share/npm/bin\x1e/home/angel/\x2elocal/share/cargo/bin\x1e/home/angel/\x2elocal/bin

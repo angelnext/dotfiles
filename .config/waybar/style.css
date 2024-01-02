@@ -5,9 +5,8 @@
 }
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 1px solid #333;
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ccc;
   transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -24,15 +23,16 @@ button {
 
 #workspaces {
   transition: all 0.5s ease-in-out;
-  padding: 12px 0px;
+  padding: 3px 3px;
   border-radius: 5px;
 }
 
 #workspaces button {
-  padding: 0px 5px;
+  padding: 0px 10px;
+  margin-right: 10px;
   color: #555;
   background-color: transparent;
-  border-radius: 7px;
+  border-radius: 5px;
 }
 
 #workspaces :last-child {
@@ -40,7 +40,8 @@ button {
 }
 
 #workspaces button.active {
-  color: #fff;
+  color: #ccc;
+  background-color: #602fff;
 }
 
 button:hover {
@@ -55,7 +56,13 @@ button:hover {
 #pulseaudio,
 #idle_inhibitor,
 #bluetooth {
-  padding: 10px 10px;
-  color: #fff;
-  border-radius: 999px;
+  padding: 7px 15px;
+  color: #ccc;
+  margin-right: 7px;
+  border-left: 1px solid #666;
+}
+
+#window {
+  color: #666;
+  font-size: 9.5px;
 }
